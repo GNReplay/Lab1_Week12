@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                     // Runs model inference and gets result.
                     MobilenetV110224Quant.Outputs outputs = model.process(inputFeature0);
                     TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
-                    result.setText(getMax(outputFeature0.getFloatArray())+"");
+                    result.setText(labels[getMax(outputFeature0.getFloatArray())]+"");
 
                     // Releases model resources if no longer used.
                     model.close();

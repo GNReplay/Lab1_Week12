@@ -37,7 +37,7 @@
         android:id="@+id/captureBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageView"
+        android:layout_below="@id/selectBtn"
         android:text="Capture"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"/>
